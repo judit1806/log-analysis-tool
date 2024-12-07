@@ -36,30 +36,4 @@ Place your server log file (e.g., sample.log) in the project directory.
 
 4. Run the Script
 
-Output
-Console Output
-The script displays:
-
-Requests per IP: Total requests from each IP address.
-Top 5 Requests per IP: Highlights the most active IP addresses.
-Most Frequently Accessed Endpoint: Endpoint accessed most frequently, along with access count.
-Suspicious Activities: List of IPs exceeding the failed login threshold.
-Example Console Output:
-
-
-
-Requests per IP:
-192.168.1.1 - 7
-203.0.113.5 - 8
-...
-
-Top 5 Requests per IP:
-203.0.113.5 - 8
-...
-
-Most Frequently Accessed Endpoint:
-/login (Accessed 13 times)
-
-Suspicious Activity Detected:
-203.0.113.5 - 8 failed login attempts
 
