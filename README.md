@@ -1,39 +1,64 @@
-# log-analysis-tool
-Log Analysis Tool
-A Python-based tool designed to analyze web server logs efficiently. This tool is perfect for gaining insights into server activity, identifying frequently accessed resources, and detecting potential security threats like suspicious login attempts.
+# 🔍 Log Analysis Tool – Python Web Server Log Analyzer
 
-Project Overview
-Web server logs contain critical information about user interactions and server activity. The Log Analysis Tool provides a comprehensive analysis of these logs, helping system administrators and security professionals monitor server health and security.
+A Python-based, open-source tool for analyzing web server logs with a focus on usability, performance, and actionable insights. This log analyzer helps system administrators and developers gain visibility into server traffic, popular endpoints, suspicious activities, and much more.
 
-Features
-Request Analysis: Counts and lists requests made by each IP address.
-Top IPs: Highlights the top 5 IPs with the highest number of requests.
-Endpoint Insights: Identifies the most frequently accessed endpoint.
-Suspicious Activity Detection: Detects IPs with excessive failed login attempts.
-CSV Reporting: Outputs results to a CSV file for easy sharing and documentation.
-Requirements
-This tool requires Python 3.x and the following libraries:
+---
 
-re (for pattern matching)
-csv (for saving results)
-collections (for efficient data handling)
-Install Python libraries using:
+## 📘 Project Overview
 
-bash
-Copy code
+Web server logs (e.g., from Apache or Nginx) contain critical data on how users interact with your site. This tool parses and analyzes these logs to provide:
+
+- ✅ Security monitoring
+- ✅ Traffic insights
+- ✅ Resource usage tracking
+
+Ideal for:
+- System administrators
+- DevOps engineers
+- Security analysts
+- Backend developers
+
+---
+
+## 🚀 Features
+
+- **Request Analysis:** Count and list requests from each unique IP address
+- **Top IPs:** Identify the top 5 IPs with the highest number of requests
+- **Endpoint Insights:** Find the most frequently accessed endpoints
+- **Suspicious Activity Detection:** Detect IPs with excessive failed login attempts
+- **CSV Reporting:** Export results to CSV for documentation or sharing
+
+---
+
+## 🧰 Requirements
+
+- Python 3.x
+- No external dependencies except standard libraries:
+  - `re`
+  - `csv`
+  - `collections`
+
+Install Python libraries (if needed):
+
+```bash
 pip install -r requirements.txt
-Usage
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/judit1806/log-analysis-tool.git
-2. Navigate to the Project Directory
-bash
-Copy code
-cd log-analysis-tool
-3. Place the Log File
-Place your server log file (e.g., sample.log) in the project directory.
 
-4. Run the Script
+__installation__
+# Clone the repository
+git clone https://github.com/judit1806/log-analysis-tool.git
+
+# Navigate to the project directory
+cd log-analysis-tool
+
+Usage
+Place your log file (e.g., access.log, sample.log) in the project directory.
+
+Run the analyzer:
+
+Place your log file (e.g., access.log, sample.log) in the project directory.
+
+Run the analyzer:
+python log_analyzer.py sample.log
+
 
 
